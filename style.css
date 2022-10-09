@@ -1,0 +1,281 @@
+
+body {
+    margin: auto;
+    padding: 0%;
+    background-color: whitesmoke
+}
+
+header {
+    background-color: aqua;
+    color: darkblue;
+    box-shadow: 0px 0px 15px 6px aqua;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(39, 57, 155, 0.815);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.liste_usage {
+    list-style: circle;
+    font-style: oblique;
+}
+
+p {
+    font-size: smaller;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(26, 13, 2)
+
+}
+
+a:hover {
+    font-weight: 700;
+    color: blue;
+    font-style: italic;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5% 5%;
+}
+
+header nav h1 {
+    display: flex;
+    color: blue; 
+    width: auto; 
+    height: auto; 
+    margin: auto; 
+    padding: 1%;
+    font-size: xx-large;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}   
+
+header nav .right img {
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+}
+
+header nav .left img {  
+    box-sizing: border-box;
+    height: 50px;
+}
+
+
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.main img {
+    width: 500px;
+    height: 335px;
+    margin-left: 1%;
+    box-shadow: 0px 0px 15px 6px black;
+}
+
+.main article {
+    width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main h2 {
+    font-size: 300%;
+    margin-bottom: 2%;
+}
+
+.main h1 {
+    font-size: 200%;
+}
+
+.main p {
+    font-size: 100%;
+    text-align: justify;
+    margin-right: 2%;
+}
+
+
+
+#transition {
+    text-align: center;
+    background-color: aqua;
+    box-shadow: -1px -20px 20px 0px aqua;
+    border-bottom: groove black;
+}
+
+
+
+.mission {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+
+
+#education {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2.5%;
+}
+
+#education article {
+    box-sizing: border-box;
+    padding: 0% 2%;
+}
+
+#education p {
+    font-size: 100%;
+    text-align: justify;
+}
+
+#education #buddy_droite {
+    width: 1500px;
+    height: 500px;
+    margin-right: 2%;
+}
+
+
+
+#travail {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2.5%;
+}
+
+#travail article {
+    box-sizing: border-box;
+    padding: 0% 2%;
+}
+
+#travail p {
+    font-size: 100%;
+    text-align: justify;
+}
+
+#travail #buddy_gauche {
+    width: 800px;
+    height: 500px;
+    margin-left: 2%;
+}
+
+
+
+footer {
+    background-color: aqua;
+    color: darkblue;
+    border-top: groove black;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    padding-bottom: 2%;
+}
+
+footer #contact_footer {
+    margin-left: 22%;
+    border-right: 3px solid;
+    padding-right: 2%;
+}
+
+footer #adresse_footer {
+    margin-right: 20%;
+}
+
+footer #adresse_footer h3 {
+    padding-top: 2%;
+    margin-top: 16.5%;
+}
+
+footer img {
+    width: 30%;
+    height: 30%;
+    margin-left: 10%;
+}
+
+footer .footer_tittle {
+    font-weight: 500;
+}
+
+.mentions_légales {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: azure;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+@media screen and (max-width: 800px) {
+    
+    *{
+        width: auto !important;
+        height: auto !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        padding: 5% 1% !important;
+        padding-right: 2% !important;
+        margin: auto !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
+        text-align: justify !important;
+    }
+
+    .main img {
+        width: 500px;
+        height: 335px;
+        margin-left: 1%;
+        box-shadow: none;
+    }
+
+    footer nav{
+        display: block;
+    }
+
+    footer #contact_footer {
+        border-right: none;
+        border-bottom: 3px solid;
+    }
+
+    #buddy_droite {
+        order: -1;
+    }
+
+    footer h3 {
+        text-align: center !important;
+    }
+
+    header{
+        border-bottom: groove black;
+        border-top: groove black;
+    }
+}
